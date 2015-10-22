@@ -35,7 +35,6 @@ module.exports = class Rubocop extends Beautifier
 
     @run("rubocop", [
       "--auto-correct"
-      "--config", configFile
       tempFile = @tempFile("temp", text)
       ], {ignoreReturnCode: true})
       .then(=>
